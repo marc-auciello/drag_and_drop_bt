@@ -1,47 +1,44 @@
-/* main */
-
 * {
-   box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-   align-items: center;
-   background-color: #024959;
-   display: flex;
-   height: 100vh;
-   justify-content: center;
-   margin: 0;
-   padding: 40px;
-   overflow: hidden;
+  background-color: steelblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
 }
 
 .empty {
-   background-color: #3CA6A6;
-   border: solid 3px #F2E3D5;
-   height: 150px;
-   margin: 10px;
-   width: 150px;
+  height: 150px;
+  width: 150px;
+  margin: 10px;
+  border: solid 3px black;
+  background: white;
 }
 
 .fill {
-   /* random unsplash image - only change size at the end */
-   background-image: url('http://source.unsplash.com/random/150x150');
-   cursor: pointer;
-   height: 145px;
-   width: 145px;
+  background-image: url('https://source.unsplash.com/random/150x150');
+  height: 145px;
+  width: 145px;
+  cursor: pointer;
 }
 
 .hold {
-   border: solid 5px #ffffff;
+  border: solid 5px #ccc;
 }
 
 .hovered {
-   background-color: #012E40;
-   border-color: #F2E3D5;
+  background-color: #333;
+  border-color: white;
+  border-style: dashed;
 }
 
-@media(max-width: 800px) {
-   body {
-      flex-direction: column;
-   }
+@media (max-width: 800px) {
+  body {
+    flex-direction: column;
+  }
 }
